@@ -25,8 +25,8 @@
                                         {{$rencana->title}}
                                     </h5>
                                 </a>
-                                <div class="mb-3 font-normal text-gray-700">
-                                    {{Str::words($rencana->content,20)}}
+                                <div class="mb-3 font-normal text-gray-700 break-all">
+                                    {{Str::words($rencana->content,15)}}
                                 </div>
                                 <a href="{{route('folder_rencana.show', [
                                 'username'=> $rencana->user->username,
@@ -44,8 +44,10 @@
                         </div>
 
                     @empty
-                        <div>
-                            <p class="text-gray-900 text-gray-400 py-16"> Tidak Ditemukan Rencana Desa</p>
+                        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                            <div class="p-6 text-gray-900">
+                                Tidak Ditemukan Rencana Desa
+                            </div>
                         </div>
 
                     @endforelse

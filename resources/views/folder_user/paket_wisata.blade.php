@@ -34,7 +34,7 @@
                         <img class="w-full h-[95%] object-cover rounded-t-lg" src="{{ $paket_wisata->imageUrl() }}" alt="Gambar Paket Wisata">
                         
                         <div class="p-4">
-                            <h5 class="text-2xl font-regular text-gray-800 text-center">
+                            <h5 class="text-2xl font-regular text-gray-800 text-center break-all">
                                 {{ $paket_wisata->title }}
                             </h5>
                         </div>

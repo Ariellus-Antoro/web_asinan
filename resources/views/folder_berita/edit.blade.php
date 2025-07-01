@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="py-4">
         <div class="max-w-3xl mx-auto sm:px-6 lg:px-8">
-            <h1 class="text-3xl mb-5">
+            <h1 class="text-3xl mb-5 break-words">
                 Edit Berita: <strong class="font-bold">{{ $berita->title }}</strong>
              </h1>
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-8">

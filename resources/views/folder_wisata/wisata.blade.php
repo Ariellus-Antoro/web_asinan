@@ -21,17 +21,19 @@
                             <img class="w-full h-64 object-cover rounded-t-lg" src="{{ $wisata->imageUrl() }}" src="{{ $wisata->imageUrl() }}" alt="">
 
                             <div class="p-4">
-                                <h5 class="mb-2 text-xl font-semibold text-gray-800">
+                                <h5 class="mb-2 text-xl font-semibold text-gray-800 break-all">
                                     {{$wisata->title}}
                                 </h5>
-                                <p class="text-sm text-gray-600 ">
-                                    {{Str::words($wisata->content,20)}}
+                                <p class="text-sm text-gray-600 break-all">
+                                    {{Str::words($wisata->content,15)}}
                                 </p>
                             </div>
                         </a>
                     @empty
-                        <div>
-                            <p class="text-gray-900 text-gray-400 py-16"> Tidak Ditemukan Wisata Desa</p>
+                        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                            <div class="p-6 text-gray-900">
+                                Tidak Ditemukan Wisata
+                            </div>
                         </div>
                     @endforelse
                     

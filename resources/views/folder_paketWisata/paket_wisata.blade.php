@@ -25,7 +25,7 @@
                                 'username'=> $paket_wisata->user->username,
                                 'paket_wisata'=> $paket_wisata->slug
                                 ]) }}">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{$paket_wisata->title}}</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 break-all">{{$paket_wisata->title}}</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-700">
                             {{$paket_wisata->harga}}
@@ -33,8 +33,10 @@
                     </div>
                 </div>
                 @empty
-                    <div>
-                        <p class="text-gray-900 text-gray-400 py-16"> Tidak Ditemukan Paket Wisata</p>
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="p-6 text-gray-900">
+                            Tidak Ditemukan Paket
+                        </div>
                     </div>
                 @endforelse
             </div>

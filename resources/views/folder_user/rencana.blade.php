@@ -38,7 +38,7 @@
                     <!-- Text -->
                     <div class="flex flex-col justify-center">
                         <h2 class="text-4xl font-bold text-white">{{ $rencana->title }}</h2>
-                        <p class=" text-xl text-gray-300 mt-2 ">
+                        <p class=" text-xl text-gray-300 mt-2 break-all">
                             {{ Str::words($rencana->content, 20) }}
                         </p>
                     </div>
@@ -46,8 +46,8 @@
                 @else
                     <!-- Text -->
                     <div class="flex flex-col justify-center text-right">
-                        <h2 class="text-4xl font-bold text-white">{{ $rencana->title }}</h2>
-                        <p class=" text-xl text-gray-300 mt-2">
+                        <h2 class="text-4xl font-bold text-white break-all">{{ $rencana->title }}</h2>
+                        <p class=" text-xl text-gray-300 mt-2 break-all">
                             {{ Str::words($rencana->content, 20) }}
                         </p>
                     </div>

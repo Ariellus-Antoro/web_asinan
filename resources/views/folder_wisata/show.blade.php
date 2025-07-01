@@ -3,7 +3,7 @@
         <div class="max-w-3xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-8">
                 <!-- Judul -->
-                <h1 class="text-4xl font-bold mb-5 ">{{ $wisata->title }}</h1>
+                <h1 class="text-4xl font-bold mb-5 break-words">{{ $wisata->title }}</h1>
 
 
                 @if($wisata->user_id === Auth::id())

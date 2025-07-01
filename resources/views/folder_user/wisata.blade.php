@@ -85,7 +85,7 @@
                             <div class="absolute inset-0 flex items-center justify-center 
                                         bg-black bg-opacity-0 group-hover:bg-opacity-50 
                                         transition duration-300 ease-in-out">
-                                <h5 class="text-2xl font-bold text-white opacity-0 
+                                <h5 class="text-2xl font-bold text-white break-all opacity-0 
                                             translate-y-4 scale-95
                                             group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100
                                             transition duration-300 ease-in-out">

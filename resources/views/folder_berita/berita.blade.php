@@ -21,19 +21,19 @@
             <div class="text-gray-900">
                 <div class="p-4 ">
                     @forelse ($beritas as $berita)
-                        <div class="flex bg-white border border-gray-200 rounded-lg shadow-sm mb-8">
+                        <div class="flex bg-white border border-gray-200 rounded-lg shadow-sm mb-8 ">
 
                             <div class="p-5 flex-1">
                                 <a href=" {{route('folder_berita.show', [
                                 'username'=> $berita->user->username,
                                 'berita'=> $berita->slug
                                 ]) }}">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 break-all">
                                         {{$berita->title}}
                                     </h5>
                                 </a>
-                                <div class="mb-3 font-normal text-gray-700 ">
-                                    {{Str::words($berita->content,20)}}
+                                <div class="mb-3 font-normal text-gray-700 break-all">
+                                    {{Str::words($berita->content,15)}}
                                 </div>
                                 <a href="{{route('folder_berita.show', [
                                 'username'=> $berita->user->username,
@@ -51,8 +51,10 @@
                         </div>
 
                     @empty
-                        <div>
-                            <p class="text-gray-900 text-gray-400 py-16"> Tidak Ditemukan Berita</p>
+                        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                            <div class="p-6 text-gray-900">
+                                Tidak Ditemukan Berita
+                            </div>
                         </div>
 
                     @endforelse
