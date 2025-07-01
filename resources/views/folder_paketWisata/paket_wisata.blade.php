@@ -13,7 +13,7 @@
             <!-- Content -->
             <div class="flex flex-wrap justify-start gap-6 mt-8">
                 @forelse ($paket_wisatas as $paket_wisata)
-                    <div class="w-full sm:w-[48%] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <div class="w-full sm:w-[48%] bg-white border border-gray-200 rounded-lg shadow-sm">
                     <a href="{{route('folder_paketWisata.show', [
                                 'username'=> $paket_wisata->user->username,
                                 'paket_wisata'=> $paket_wisata->slug
@@ -25,9 +25,9 @@
                                 'username'=> $paket_wisata->user->username,
                                 'paket_wisata'=> $paket_wisata->slug
                                 ]) }}">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{$paket_wisata->title}}</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{$paket_wisata->title}}</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p class="mb-3 font-normal text-gray-700">
                             {{$paket_wisata->harga}}
                         </p>
                     </div>

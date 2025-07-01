@@ -16,7 +16,7 @@ class Paket_wisataController extends Controller
      */
     public function index()
     {
-        $paket_wisatas = Paket_wisata::latest()->paginate(5);
+        $paket_wisatas = Paket_wisata::latest()->paginate(10);
 
         return view('folder_paketWisata.paket_wisata', [
 
