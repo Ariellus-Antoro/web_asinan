@@ -1,1 +1,2 @@
-<img src="/logo.png" class="h-12" alt="">
+
+<img src="{{ $logoUrl}}" class="h-12 rounded-full" alt="">

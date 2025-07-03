@@ -19,32 +19,39 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen">
+    <body class="bg-[#FDFDFC] text-[#1b1b18] min-h-screen">
 
     <header class="w-full px-6 py-4 text-right">
         @if (Route::has('login'))
             <nav class="flex justify-end gap-4">
                 @auth
                     <a href="{{ route('dashboard') }}"
-                       class="px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-[#19140035] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm">
+                       class="px-5 py-1.5 text-[#1b1b18] border border-[#19140035] hover:border-[#1915014a] rounded-sm text-sm">
                         Dashboard
                     </a>
                 @else
                     <a href="{{ route('login') }}"
-                       class="px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm">
+                       class="px-5 py-1.5 text-[#1b1b18] border border-transparent hover:border-[#19140035] rounded-sm text-sm">
                         Log in
                     </a>
 
-                    @if (Route::has('register'))
+                    {{-- @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                           class="px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-[#19140035] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm">
+                           class="px-5 py-1.5 text-[#1b1b18] border border-[#19140035] hover:border-[#1915014a] rounded-sm text-sm">
                             Register
                         </a>
-                    @endif
+                    @endif --}}
                 @endauth
             </nav>
         @endif
         </header>
+        <div class="relative w-screen h-screen">
+            <img src="/heroSection.jpeg" alt="Hero Section" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white animate-fadeInUp">
+                <h1 class="text-7xl font-black tracking-wider">Admin</h1>
+            </div>
+        </div>
 </body>
 
 </html>

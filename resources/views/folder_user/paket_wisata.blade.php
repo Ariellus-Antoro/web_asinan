@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<div class="py-8 mt-10">
+<div class="py-8 mt-10" data-aos="fade-up" data-aos-delay="100">
     <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
 
         <div class="flex items-center mb-8">

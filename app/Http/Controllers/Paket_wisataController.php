@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Paket_wisata;
+use App\Models\Setting;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use App\Http\Requests\Paket_wisataCreateRequest;
@@ -55,8 +56,11 @@ class Paket_wisataController extends Controller
      */
     public function show(string $username, Paket_wisata $paket_wisata)
     {
+        $contact_phone = Setting::fetch('contact_person_phone');
+        
         return view('folder_paketWisata.show', [
             'paket_wisata' => $paket_wisata,
+            'contact_phone' => $contact_phone,
         ]);
     }
 

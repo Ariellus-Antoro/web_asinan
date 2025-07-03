@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="py-8 mt-10">
+<div class="py-8 mt-10 " data-aos="fade-up" data-aos-delay="100">
     <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
 
         <div class="flex items-center mb-8">
@@ -50,7 +50,7 @@
 </div>
 
 
-<div class="py-8 mt-15">
+<div class="py-8 mt-15" data-aos="fade-up" data-aos-delay="100">
     <div class=" max-w-8xl mx-auto sm:px-6 lg:px-8 flex flex-col justify-start">
 
         <div class="px-4 flex-shrink-0 text-4xl font-bold text-black tracking-wide">
@@ -109,7 +109,7 @@
     </div>
 </div>
 
-<div class="py-8 mt-15">
+<div class="py-8 mt-15" data-aos="fade-up" data-aos-delay="100">
     <div class=" max-w-8xl mx-auto sm:px-6 lg:px-8 flex flex-col justify-start">
 
         <div class="px-4 flex-shrink-0 text-4xl font-bold text-black tracking-wide">
@@ -120,7 +120,7 @@
             <div class="relative aspect-video">
                 <iframe
                     class="absolute inset-0 w-full h-full rounded-lg shadow"
-                    src="https://www.youtube.com/embed/7zBBqij-N6k"
+                    src="https://www.youtube.com/embed/{{ $featured_video }}"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -139,7 +139,7 @@
     </div>
 </div>
 
-<div class="py-8">
+<div class="py-8" data-aos="fade-up" data-aos-delay="100">
     <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 flex flex-col justify-start">
 
         <div class="px-4 flex-shrink-0 text-4xl font-bold text-black tracking-wide">
@@ -174,7 +174,7 @@
     </div>
 </div>
 
-<div class="relative min-h-screen flex items-center justify-center mt-10">  
+<div class="relative min-h-screen flex items-center justify-center mt-10" data-aos="fade-up" data-aos-delay="100">  
     <img src="/pattern.jpg" alt="Pattern" class="absolute inset-0 w-full h-full object-cover block">
     <div class="absolute inset-0 bg-black bg-opacity-90"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto"> 

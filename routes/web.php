@@ -8,6 +8,7 @@ use App\Http\Controllers\UserBeritaController;
 use App\Http\Controllers\UserRencanaController;
 use App\Http\Controllers\UserWisataController;
 use App\Http\Controllers\UserPaket_wisataController;
+use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,23 @@ Route::get('/admin', function () {
 Route::get('/admin/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+
+    Route::get('/admin/setting/', [SettingController::class, 'index'])
+        ->name('folder_setting.setting');
+    // Route::post('/admin/setting', [SettingController::class, 'store']);
+    Route::put('/admin/setting/update', [SettingController::class, 'update'])
+        ->name('folder_setting.update');
+
+    Route::put('/admin/setting/updateContact', [SettingController::class, 'updateContact']) 
+    ->name('folder_setting.updateContact');
+
+    Route::put('/admin/setting/updateVideo', [SettingController::class, 'updateVideo']) 
+    ->name('folder_setting.updateVideo');
+
+});
+
 
 
 
@@ -155,9 +173,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/admin/rencana/{username}/{rencana:slug}', [RencanaController::class, 'show'])
         ->name('folder_rencana.show');
-
 });
-
 
 
 // PROFILE

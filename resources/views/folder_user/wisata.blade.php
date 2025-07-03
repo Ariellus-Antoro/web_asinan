@@ -15,7 +15,7 @@
 <div class="py-8 mt-10">
     <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
 
-        <div class="flex items-center mb-8">
+        <div class="flex items-center mb-8" data-aos="fade-up" data-aos-delay="100">
             <div class="flex-grow border-2 border-black"></div>
             <span class="px-4 flex-shrink-0 text-4xl text-black tracking-wider">
                HIGHLIGHT WISATA
@@ -24,7 +24,7 @@
         </div>
 
         <!-- CARD -->
-        <div class="relative">
+        <div class="relative" data-aos="fade-up" data-aos-delay="100">
             <div class="flex justify-evenly">
                 @forelse ($top3s as $wisata)
                     <a href="{{ route('folder_user.showWisata', [
@@ -62,7 +62,7 @@
     <div class="absolute inset-0 bg-black bg-opacity-90"></div>
 
     <!-- Content -->
-    <div class="relative z-10 mx-auto p-4 space-y-8 " >
+    <div class="relative z-10 mx-auto p-4 space-y-8 " data-aos="fade-up" data-aos-delay="100" >
         <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
 
             <div class="flex justify-center mb-8 mt-10">

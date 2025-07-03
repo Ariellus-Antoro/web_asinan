@@ -5,11 +5,17 @@
 <div id="controls-carousel" class="relative w-screen h-[70vh]" data-carousel="static">
     <!-- Carousel wrapper -->
     <div class="relative w-screen h-full overflow-hidden">
-        @foreach($beritaTerbarus as $beritaTerbaru)
+        @foreach($beritaTerbarus as $berita)
             <div class="{{ $loop->first ? 'active' : 'hidden' }} duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ $beritaTerbaru->imageUrl() }}" 
+                 <a href="{{ route('folder_user.showberita', [
+                                'username' => $berita->user->username,
+                                'berita' => $berita->slug
+                            ]) }}">
+                    <img src="{{ $berita->imageUrl() }}" 
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" 
                      alt="...">
+                 </a>
+                
             </div>
         @endforeach
     </div>
@@ -37,14 +43,14 @@
     <div class="w-full">
 
         <!-- Categories-->
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg" data-aos="fade-up" data-aos-delay="100">
             <div class="p-4 text-gray-900">
                 <x-category-tabs-user :categories="$categories" />
             </div>
         </div>
 
         <!-- Content-->
-        <div class="max-w-7xl mx-auto p-4">
+        <div class="max-w-7xl mx-auto p-4" data-aos="fade-up" data-aos-delay="100">
             <div class="flex flex-wrap justify-center gap-6">
                 @forelse ($beritas as $berita)
                     

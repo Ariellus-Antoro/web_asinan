@@ -12,6 +12,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+
+        <link rel="icon" type="image/png" href="{{ $logoUrl}}">
+
         <style>
             @keyframes fadeInUp {
                 from { opacity: 0; transform: translateY(20px); }

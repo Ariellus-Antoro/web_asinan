@@ -39,12 +39,18 @@
                 <!-- Content -->
                 <div class="border-t mt-3">
                     <img src="{{ $paket_wisata->imageUrl() }}" alt="" class="w-full mt-10">
+
+                    <h3 class="mt-5 text-xl font-bold">DESKRIPSI PAKET</h3>
                     
-                    <div class="mt-8">
-                        <strong>HARGA : </strong> Rp {{$paket_wisata->harga}}
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="p-6 text-gray-900">
+                            <strong>HARGA : </strong> Rp {{$paket_wisata->harga}}
+                            <br>
+                            <strong> Kontak yang bisa dihubungi : </strong> {{ $contact_phone }}
+                        </div>
                     </div>
 
-                    <div class="mt-5 text-lg text-gray-800 leading-relaxed break-words">
+                    <div class="mt-5 text-lg text-gray-800 leading-relaxed break-words text-justify">
                         {{$paket_wisata->content}}
                     </div>
                 </div>

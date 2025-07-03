@@ -1,8 +1,8 @@
 <nav class="bg-white fixed w-full top-0 left-0 z-50 border-b border-gray-100 shadow-sm">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <x-application-logo class="h-8 w-auto fill-current text-gray-800" />
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse ">
+            <x-application-logo class="h-8 w-auto fill-current text-gray-800 rounded-full" />
         </a>
 
         <!-- Mobile menu toggle button -->

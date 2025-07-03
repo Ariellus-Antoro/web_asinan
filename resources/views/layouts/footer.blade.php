@@ -3,8 +3,8 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="#" class="flex items-center">
-                  <img src="/logo.png" class="h-8 me-3" alt="logo" />
+              <a href="#" class="flex items-center gap-5">
+                  <x-application-logo class="h-8 w-auto fill-current text-gray-800 rounded-full" />
                   <span class="self-center text-2xl text-white font-semibold whitespace-nowrap">Desa Wisata Asinan</span>
               </a>
           </div>

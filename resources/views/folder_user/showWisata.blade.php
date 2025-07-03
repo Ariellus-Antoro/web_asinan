@@ -10,7 +10,7 @@
                 <div class="border-t mt-3">
                     <img src="{{ $wisata->imageUrl() }}" alt="" class="w-full mt-10">
                     
-                    <div class="mt-5 text-lg text-gray-800 leading-relaxed break-words">
+                    <div class="mt-5 text-lg text-gray-800 leading-relaxed break-words text-justify">
                         {{$wisata->content}}
                     </div>
                 </div>
