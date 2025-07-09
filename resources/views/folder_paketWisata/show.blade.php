@@ -46,7 +46,7 @@
                         <div class="p-6 text-gray-900">
                             <strong>HARGA : </strong> Rp {{$paket_wisata->harga}}
                             <br>
-                            <strong> Kontak yang bisa dihubungi : </strong> {{ $contact_phone }}
+                            <p class="text-lg mb-5"> <strong>Nomor Kontak :</strong>  <a href="{{ $contact_phone }} " class="text-blue-600 hover:underline"> {{ $contact_phone }}</a> </p>
                         </div>
                     </div>
 
