@@ -7,7 +7,7 @@
     <img src="/heroSection.jpeg" alt="Hero Section" class="w-full h-full object-cover">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center text-white animate-fadeInUp">
-        <h1 class="text-7xl font-black tracking-wider">Wisata</h1>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-wider">Wisata</h1>
     </div>
 </div>
 
@@ -25,20 +25,19 @@
 
         <!-- CARD -->
         <div class="relative" data-aos="fade-up" data-aos-delay="100">
-            <div class="flex justify-evenly">
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
                 @forelse ($top3s as $wisata)
                     <a href="{{ route('folder_user.showWisata', [
                                 'username' => $wisata->user->username,
                                 'wisata' => $wisata->slug
-                            ]) }}" class="relative flex-shrink-0 w-[23rem] h-[30rem] rounded-3xl overflow-hidden group">
-
+                            ]) }}" class="relative w-[20rem] sm:w-[22rem] md:w-[23rem] h-[26rem] sm:h-[28rem] md:h-[30rem] rounded-3xl overflow-hidden group">
                         <img class="w-full h-full object-cover" 
                             src="{{ $wisata->imageUrl() }}" 
                             alt="{{ $wisata->title }}">
                         <div class="absolute inset-0 flex items-center justify-center 
                                     bg-black bg-opacity-0 group-hover:bg-opacity-50 
                                     transition duration-300 ease-in-out">
-                            <h5 class="text-2xl font-bold text-white opacity-0 
+                            <h5 class="text-xl md:text-2xl font-bold text-white opacity-0 
                                     translate-y-4 scale-95
                                     group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100
                                     transition duration-300 ease-in-out">
@@ -47,9 +46,7 @@
                         </div>
                     </a>
                 @empty
-                    <div>
-                        <p class="text-gray-900 text-gray-400 py-16">Tidak Ditemukan Wisata</p>
-                    </div>
+                    <p class="text-gray-400 py-16">Tidak Ditemukan Wisata</p>
                 @endforelse
             </div>
         </div>
@@ -73,13 +70,13 @@
 
             <!-- CARD -->
             <div class="relative">
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     @forelse ($remainings as $wisata)
                         <a href="{{ route('folder_user.showWisata', [
                                 'username' => $wisata->user->username,
                                 'wisata' => $wisata->slug
                             ]) }}" class="relative rounded-3xl overflow-hidden group shadow-lg border-white">
-                            <img class="w-full h-[20rem] object-cover" 
+                            <img class="w-full h-[15rem] sm:h-[18rem] md:h-[20rem] object-cover" 
                                 src="{{ $wisata->imageUrl() }}" 
                                 alt="{{ $wisata->title }}">
                             <div class="absolute inset-0 flex items-center justify-center 

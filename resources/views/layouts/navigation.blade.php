@@ -100,6 +100,26 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('folder_wisata.wisata')" :active="request()->routeIs('folder_wisata.wisata')">
+                {{ __('Wisata') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('folder_paketWisata.paket_wisata')" :active="request()->routeIs('folder_paketWisata.paket_wisata')">
+                {{ __('Paket Wisata') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('berita')" :active="request()->routeIs('berita')">
+                {{ __('Berita Desa') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('folder_rencana.rencana')" :active="request()->routeIs('folder_rencana.rencana')">
+                {{ __('Rencana Desa') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('folder_setting.setting')" :active="request()->routeIs('folder_setting.setting')">
+                {{ __('Settings') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

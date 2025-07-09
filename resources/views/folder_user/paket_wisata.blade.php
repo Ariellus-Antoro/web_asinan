@@ -7,7 +7,7 @@
     <img src="/heroSection.jpeg" alt="Hero Section" class="w-full h-full object-cover">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center text-white animate-fadeInUp">
-        <h1 class="text-7xl font-black tracking-wider">Paket Wisata</h1>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-wider">Paket Wisata</h1>
     </div>
 </div>
 
