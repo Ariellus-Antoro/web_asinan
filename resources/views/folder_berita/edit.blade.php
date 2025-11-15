@@ -28,7 +28,7 @@
                         <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" :value="old('title', $berita->title)" autofocus />
                         <x-input-error :messages="$errors->get('title')" class="mt-2" />
                     </div>
-
+ 
                     <!-- Category -->
                     <div class="mt-4">
                         <x-input-label for="category_id" :value="__('Category')" />
